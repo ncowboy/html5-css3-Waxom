@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	width="70px" height="24px" viewBox="0 0 70 24">
+<filter filterUnits="objectBoundingBox" x="0.00" y="0.00" width="100.00" height="100.00" id="filter0">
+<feFlood flood-color="rgb(255,255,255)" result="coFloodOut1"/>
+<feComposite in="coFloodOut1" in2="SourceAlpha" operator="in" result="coOverlay1"/>
+<feBlend in="coOverlay1" in2="SourceGraphic" mode="normal" result="colorOverlay1"/>
+</filter>
+<filter filterUnits="objectBoundingBox" x="0.00" y="0.00" width="100.00" height="100.00" id="filter1">
+<feFlood flood-color="rgb(255,255,255)" result="coFloodOut1"/>
+<feComposite in="coFloodOut1" in2="SourceAlpha" operator="in" result="coOverlay1"/>
+<feBlend in="coOverlay1" in2="SourceGraphic" mode="normal" result="colorOverlay1"/>
+</filter>
+<path fillRule="evenodd" d="M 15 3C 15 3 13.5 3 13.5 3 13.5 1.34 11.48-0 9-0 6.51-0 4.5 1.34 4.5 3 4.5 3 3 3 3 3 1.35 3 0 4.34 0 6 0 6 0 21 0 21 0 22.65 1.35 23.99 3 23.99 3 23.99 15 23.99 15 23.99 16.65 23.99 17.99 22.65 17.99 21 17.99 21 17.99 6 17.99 6 17.99 4.34 16.65 3 15 3ZM 9 1.5C 10.66 1.5 12 1.96 12 3 12 3 6 3 6 3 6 1.96 7.34 1.5 9 1.5ZM 16.49 21C 16.49 21.82 15.82 22.49 15 22.49 15 22.49 3 22.49 3 22.49 2.17 22.49 1.5 21.82 1.5 21 1.5 21 1.5 19.5 1.5 19.5 1.5 19.5 16.49 19.5 16.49 19.5 16.49 19.5 16.49 21 16.49 21ZM 16.49 18C 16.49 18 1.5 18 1.5 18 1.5 18 1.5 6 1.5 6 1.5 5.17 2.17 4.5 3 4.5 3 4.5 4.5 4.5 4.5 4.5 4.5 4.5 4.5 9 4.5 9 4.5 9 6 9 6 9 6 9 6 4.5 6 4.5 6 4.5 12 4.5 12 4.5 12 4.5 12 9 12 9 12 9 13.5 9 13.5 9 13.5 9 13.5 4.5 13.5 4.5 13.5 4.5 15 4.5 15 4.5 15.82 4.5 16.49 5.17 16.49 6 16.49 6 16.49 18 16.49 18Z" fill="rgb(0,0,0)" filter="url(#filter0)"/><path fillRule="evenodd" d="M 69.76 22.68C 69.76 22.68 63.57 16.59 63.57 16.59 65.19 14.82 66.19 12.49 66.19 9.93 66.19 4.44 61.67-0 56.09-0 50.52-0 46 4.44 46 9.93 46 15.42 50.52 19.86 56.09 19.86 58.5 19.86 60.71 19.03 62.45 17.64 62.45 17.64 68.66 23.76 68.66 23.76 68.97 24.06 69.46 24.06 69.76 23.76 70.06 23.46 70.06 22.98 69.76 22.68ZM 56.09 18.33C 51.38 18.33 47.55 14.57 47.55 9.93 47.55 5.29 51.38 1.52 56.09 1.52 60.81 1.52 64.63 5.29 64.63 9.93 64.63 14.57 60.81 18.33 56.09 18.33Z" fill="rgb(0,0,0)" filter="url(#filter1)"/></svg>
