@@ -1,0 +1,111 @@
+
+.btn {
+  margin-top: 20px;
+  font-family: Montserrat;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  background-color:  #998675;
+  background-image: none;
+  border: 0;
+
+}
+
+ #carousel {
+  margin: 0 auto;
+  text-align: center;
+  }
+
+.carousel-control.left,
+.carousel-control.right {
+  background-image: none;
+}  
+
+.carousel-indicators {
+  position: static;
+  margin: 0 auto;
+  margin-top: 250px;
+}
+  
+ .carousel-inner {
+    width: 50%;
+	height: 300px;
+    margin: 0 auto;
+ } 
+  
+.head {
+  width: 100%;
+  background-image: url('../img/photo.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.head-top {
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 275px;
+}
+
+.logo {
+    font-family: Raleway;
+    font-size: 34px;
+    font-weight: 400;
+	a {
+	color: #fff;
+	text-decoration: none;
+	}
+  }
+
+.menu {
+  display: flex;
+  a{
+    color:  #ffffff;
+    font-size: 14px;
+    font-weight: 300;
+	padding: 10px 10px;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    text-transform: capitalize;
+	  &:hover {
+       color: $gray-hover;
+        }
+	  &:nth-child(3) {
+        background-position-x: -46px;	
+       }
+	 }  
+
+  .cart-search {
+  background-image: url('../img/icons.svg');
+  background-repeat: no-repeat;
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  margin-right: 24px;
+    &:hover {
+    background-image: url('../img/icons-hover.svg');
+    } 
+  }
+  input {
+    color: $dark-gray;
+	font-size: 16px;
+	height: 24px;
+	margin-right: 10px;
+	  &::placeholder {
+	    font-size: 0.6em;
+		font-weight: 200;
+		font-style: italic;
+	  }
+   }
+  
+  li {
+    display: inline-block;
+  }
+  
+  ul {
+    margin-right: 60px;
+  }
+}
+
