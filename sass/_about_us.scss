@@ -1,12 +1,81 @@
-.about-us {
+#about-us {
+  
   figure {
+    color: $dark-gray;
     width: 33%;
 	text-align: center;
+	border-bottom: 3px solid #f1eee9;
+	padding-bottom: 20px;
+	margin: 0 17px;
+	  &:hover {
+	    color: $gray-hover;
+		border-color: $gray-hover;
+	  }
+	p {
+	  font-size: 22px;
+	  font-weight: 600;
+	}  
+	  
   }
   
   figcaption {
-  
+    color: $dark-gray;
+    margin-top: 20px;
+	font-size: 14px;
   }
  
 }
 
+.advantages {
+  display: flex;
+  padding-bottom: 40px;
+  width: 65%;
+  margin: 0 auto;
+}
+
+.browser {
+  width: 100%;
+  background-image: url('../img/browser.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: top;
+  background-color: #2a201c;
+  height: 482px;  
+}
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  font-size: 4em !important;
+  margin-bottom: 30px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.icon-cog:before {
+  content: "\e900";
+}
+.icon-folder:before {
+  content: "\e901";
+}
+.icon-pencil:before {
+  content: "\e902";
+}
+.icon-stack:before {
+  content: "\e903";
+}
+
+
+.realization {
+  background-color: $bg-darker;
+  padding: 40px 0 0 0;
+  
+    h3 {
+	  color: $dark-gray;
+	}
+}

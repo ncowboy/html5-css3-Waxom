@@ -17,7 +17,7 @@
 	    <nav class="menu">
 	      <ul>
 	        <li><a href="#">home</a></li>
-		    <li><a href="#">about us</a></li>
+		    <li><a href="#about-us">about us</a></li>
 		    <li><a href="#">Portfolio</a></li>
 		    <li><a href="#">Features</a></li>
 		    <li><a href="#">Blog</a></li>
@@ -25,7 +25,12 @@
 		    <li><a href="#">Shortcodes</a></li>
 		    <li><a href="#">Contacts</a></li>
 		  </ul>
-		   <input type="search" id="search" class="panel-collapse collapse out" placeholder="for example: price"></input>	
+		    <div id="search" class="panel-collapse collapse out"> 
+		      <input type="search" autofocus  placeholder="for example: price" name=s></input>
+              <button>
+			    <i class="fa fa-search" aria-hidden="true"></i>
+			  </button>	  
+            </div>			  
           <a class="cart-search" data-toggle="collapse" href="#search"></a>
 		  <a class="cart-search" href="#"></a>
 	    </nav>
@@ -60,17 +65,56 @@
 		</ol>
       </div>
 	</section>
-	<section class="about-us">
+	<section id="about-us">
 	  <div class="advantages">
 	    <figure>
+		  <p class="icon-pencil"></p>
 		  <p>Web & App Design</p>
 		  <figcaption>
 		    Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.
 		  </figcaption>
-		  <p>__________</p>
+		</figure>
+		<figure>
+		  <p class="icon-stack"></p>
+		  <p>Development</p>
+		  <figcaption>
+		    Lorem ipsum dolor sit amet, adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.
+		  </figcaption>
+		</figure>
+		<figure>
+		  <p class="icon-cog"></p>
+		  <p>Customization</p>
+		  <figcaption>
+		    Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.
+		  </figcaption>
+		</figure>
+		<figure>
+		  <p class="icon-folder"></p>
+		  <p>Marketing</p>
+		  <figcaption>
+		    Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.
+		  </figcaption>
 		</figure>
 	  </div>
+	  <div class="wrapper">
+	    <div class="realization">
+	      <h3>Waxom is Realization of your Ideas.</h3>
+		  <p>Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.
+		  </p>
+		  <div class="browser">
+		  </div>
+	    </div>
+	  </div>
 	</section>
+	<aside>
+	  <div class="wrapper">
+	    <div class="aside-left">
+	      <h3><span>Waxom</span> Multipurpose WordPress Theme</h3>
+		  <p>Don't Forget to Rate the Template. Thanks so much!</p>
+		</div>  
+		<a class="btn btn-warning btn-lg" href="#"><span>purchase now</span></a>
+	  </div>
+	</aside>
     <script src="js/jquery-2.1.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
   </body>

@@ -1,13 +1,15 @@
 
 .btn {
   margin-top: 20px;
-  font-family: Montserrat;
+  font-family: Montserrat, arial; 
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 700;
   background-color:  #998675;
   background-image: none;
   border: 0;
+  padding: 19px 28px;
+  border-radius: 3px;
 
 }
 
@@ -38,6 +40,7 @@
   background-image: url('../img/photo.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+  padding-bottom: 40px;
 }
 
 .head-top {
@@ -49,7 +52,7 @@
 }
 
 .logo {
-    font-family: Raleway;
+    font-family: 'Raleway Medium', arial;
     font-size: 34px;
     font-weight: 400;
 	a {
@@ -88,11 +91,12 @@
     background-image: url('../img/icons-hover.svg');
     } 
   }
-  input {
+  input, 
+  button {
     color: $dark-gray;
+	outline-style: none;
 	font-size: 16px;
-	height: 24px;
-	margin-right: 10px;
+	border-radius: 8px;
 	  &::placeholder {
 	    font-size: 0.6em;
 		font-weight: 200;
@@ -109,3 +113,10 @@
   }
 }
 
+#search {
+  margin-right: 10px;
+  
+   button {
+    width: 30px;
+  }
+}
