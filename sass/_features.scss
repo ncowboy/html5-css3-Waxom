@@ -1,0 +1,99 @@
+.features {
+  background-color: $bg-darker;
+  padding-top: 80px;
+  h3 {
+    font-family: 'Raleway medium', Arial;
+    color:  $dark-gray;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: left;
+  }
+
+  p {
+    text-align: justify;
+    font-family: Montserrat, Arial;
+    color:  $font-basic;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+    margin-top: 30px;
+  }
+
+  details {
+    position: relative;
+    margin-bottom: 15px;
+    margin-left: 100px;
+
+    p {
+      margin-top: 10px;
+    }
+
+    summary::before {
+      content: '\f105';
+      font-family: 'FontAwesome';
+      color: $bg-darker;
+      font-size: 20px;
+      line-height: 21px;
+      display: block;
+      text-align: center;
+      border-radius: 50%;
+      background-color: $gray-hover;
+      position: absolute;
+      width: 21px;
+      height: 21px;
+      top: 0;
+      left: -51px;
+      padding: 0;
+      cursor: pointer;
+      transition: 0.3s ease-in-out;
+    }
+    &[open] summary::before {
+      content: '\f105';
+      font-family: 'FontAwesome';
+      color: $bg-darker;
+      font-size: 20px;
+      line-height: 21px;
+      display: block;
+      text-align: center;
+      border-radius: 50%;
+      background-color: $gray-hover;
+      position: absolute;
+      width: 21px;
+      height: 21px;
+      top: 0;
+      left: -51px;
+      padding: 0;
+      cursor: pointer;
+      transform: rotate(90deg);
+      transition: 0.3s ease-in-out;
+    }
+  }
+
+  summary {
+  outline: none;
+  cursor: pointer;
+  }
+
+  summary::-webkit-details-marker {
+  display: none
+  }
+
+  .features-img {
+    width: 423px;
+    height: 616px;
+    background-image: url('../img/iphone-in-hand.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: $bg-darker;
+    flex-shrink: 0;
+  }
+
+  .features-text {
+    margin-left: 30px;
+    margin-top: 100px;
+  }
+
+  .inner-wrapper {
+    display: flex;
+  }
+}

@@ -1,0 +1,140 @@
+.blog {
+  padding: 80px 0;
+  article {
+    width: 30%;
+    border: 1px solid #f6f6f6;
+    box-shadow: 1px 0 #fafafa;
+    &:hover {
+      background-color: $dark-gray;
+      img {
+        opacity: 0.3;
+        transition: opacity 124ms linear;
+      }
+
+      header {
+        color: $gray-hover;
+      }
+
+      p {
+        color: #fff;
+      }
+      .day {
+        background-color: $font-basic;
+      }
+      .month {
+        background-color: #a58d73;
+      }
+    }
+
+    transition: 0.3s ease-in-out;
+  }
+  .date {
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 40px;
+    z-index: 1;
+    background-color: transparent;
+    .day {
+      background-color: #363636;
+      font-family: 'Montserrat-light', Arial;
+      font-size: 18px;
+      text-align: center;
+      color: #fff;
+      border-radius: 4px 4px 0 0;
+    }
+    .month {
+      background-color: #252525;
+      font-size: 12px;
+      text-align: center;
+      color: #fff;
+      border-radius: 0 0 4px 4px;
+    }
+  }
+
+  .feed {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+  }
+
+  .feed-nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    li {
+      display: inline-block;
+      list-style: none;
+      -webkit-margin-end: 8px;
+      color: $font-basic;
+      line-height: 19px;
+      text-align: center;
+      border-radius: 50%;
+      border: 1px solid $font-basic;
+      background-color: transparent;
+      width: 21px;
+      height: 21px;
+      &:hover {
+        border-color: $gray-hover;
+        color: $gray-hover;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+      }
+    }
+  }
+
+  h3 {
+    font-family: 'Raleway Medium', arial;
+    color: $dark-gray;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  p {
+    width: 66%;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+
+  .short-desc {
+    padding: 30px;
+    a {
+      font-family: Montserrat;
+      color: $gray-hover;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 20px;
+      text-align: left;
+      text-decoration: none;
+      span {
+        font-size: 12px;
+      }
+      &:hover {
+        color: $gray-buttons;
+        transition: 0.3s ease-in-out;
+      }
+    }
+
+    header {
+      color: $dark-gray;
+      font-size: 20px;
+      font-weight: 500;
+      text-align: left;
+    }
+    p {
+      font-family: Montserrat;
+      width: 100%;
+      margin-top: 20px;
+      margin-bottom: 25px;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 22px;
+      text-align: left;
+    }
+  }
+}

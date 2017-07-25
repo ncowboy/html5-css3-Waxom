@@ -1,29 +1,47 @@
 #about-us {
-  
+
   figure {
     color: $dark-gray;
     width: 33%;
 	text-align: center;
-	border-bottom: 3px solid #f1eee9;
+	// border-bottom: 3px solid #f1eee9;
 	padding-bottom: 20px;
 	margin: 0 17px;
 	  &:hover {
 	    color: $gray-hover;
-		border-color: $gray-hover;
+		  // border-color: $gray-hover;
+      transition: 0.3s ease-in-out;
+
+      .advs-line {
+        background-image: url('../img/advs-line-hover.svg');
+        transition: 0.3s ease-in-out;
+      }
 	  }
+
+
+
+  .advs-line {
+    height: 3px;
+    width: 70px;
+    margin: 0 auto;
+    margin-top: 30px;
+    background-image: url('../img/advs-line.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 	p {
 	  font-size: 22px;
 	  font-weight: 600;
-	}  
-	  
+	}
+
   }
-  
+
   figcaption {
     color: $dark-gray;
     margin-top: 20px;
-	font-size: 14px;
+	  font-size: 14px;
   }
- 
+
 }
 
 .advantages {
@@ -35,12 +53,12 @@
 
 .browser {
   width: 100%;
-  background-image: url('../img/browser.jpg');
+  background-image: url('../img/browser_bg.jpg');
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: top;
   background-color: #2a201c;
-  height: 482px;  
+  height: 482px;
 }
 [class^="icon-"], [class*=" icon-"] {
   font-family: 'icomoon' !important;
@@ -74,7 +92,7 @@
 .realization {
   background-color: $bg-darker;
   padding: 40px 0 0 0;
-  
+
     h3 {
 	  color: $dark-gray;
 	}

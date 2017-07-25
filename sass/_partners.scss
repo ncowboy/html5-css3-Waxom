@@ -1,0 +1,14 @@
+.partners {
+  background-image: url('../img/partners-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 140px 0;
+  .inner-wrapper {
+    display: flex;
+    justify-content: space-between;
+    a {
+      display:flex;
+      align-items: center;
+    }
+  }
+}
