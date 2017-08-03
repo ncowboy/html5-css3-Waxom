@@ -19,8 +19,8 @@
   .categories {
     width: 50%;
     margin: 40px auto;
-    display: flex;
-    justify-content: center;
+	text-align: center;
+    
     a {
       display: inline-block;
       font-family: Montserrat, arial;
@@ -43,10 +43,10 @@
   }
 
   .project {
+	position:relative;
     background-color: $bg-darker;
     padding-bottom: 20px;
-    width: 30%;
-    margin: 0 5px;
+    margin: 10px 0;
     img {
       width: 100%;
 
@@ -120,31 +120,36 @@
     flex-wrap: wrap;
   }
 
-  .project-photo {
+  
+  
+    .link-loop {
+	  display: flex;
+	  position: absolute;
+	  left: 36%;
+	  top: 25%;
+	  z-index: 1;
+	  width: 80px;
+	  height: 26px;
+	}
     .link {
-        position: absolute;
         display: none;
+		flex: 1;
         width: 26px;
         height: 25px;
-        margin-top: -121px;
-        margin-left: 136px;
         background-image: url('../img/link.svg');
         background-repeat: no-repeat;
       }
       .loop {
-          position: absolute;
           display: none;
           width: 26px;
           height: 25px;
-          margin-top: -121px;
-          margin-left: 194px;
           background-image: url('../img/link.svg');
           background-position-x: -55px;
           background-repeat: no-repeat;
         }
 
 
-    }
+    
 
  .btn {
    display: block;

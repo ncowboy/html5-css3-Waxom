@@ -2,14 +2,10 @@
 
   figure {
     color: $dark-gray;
-    width: 33%;
 	text-align: center;
-	// border-bottom: 3px solid #f1eee9;
 	padding-bottom: 20px;
-	margin: 0 17px;
 	  &:hover {
 	    color: $gray-hover;
-		  // border-color: $gray-hover;
       transition: 0.3s ease-in-out;
 
       .advs-line {
@@ -44,21 +40,18 @@
 
 }
 
-.advantages {
-  display: flex;
-  padding-bottom: 40px;
-  width: 65%;
-  margin: 0 auto;
-}
 
 .browser {
   width: 100%;
   background-image: url('../img/browser_bg.jpg');
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   background-position: top;
   background-color: #2a201c;
   height: 482px;
+    @media (max-width: 768px) {
+		display: none;
+	}
 }
 [class^="icon-"], [class*=" icon-"] {
   font-family: 'icomoon' !important;

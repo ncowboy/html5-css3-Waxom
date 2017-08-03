@@ -1,14 +1,15 @@
 .stats {
   background: linear-gradient(90deg, #211b19 0%, #4e3427 100%);
   padding: 70px 0;
-   .inner-wrapper {
-     display: flex;
-     justify-content: space-between;
+   .container {
+		text-align: center;
    }
 
 
   figure {
-    width: 15%;
+	display: inline-block;
+	margin: 0 50px;
+	margin-bottom: 50px;
 
     p {
       font-family: 'Montserrat-light', Arial;

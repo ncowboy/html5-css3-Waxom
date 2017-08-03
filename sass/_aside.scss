@@ -34,6 +34,10 @@
 		    }
 	     }
 	}
+	
+	@media(max-width: 768px) {
+	  display: none;	
+	}
 
   }
 
@@ -73,5 +77,9 @@
 
 	&:hover {
 	  left: 0;
+	}
+	
+	@media (max-width: 768px) {
+	  display: none;
 	}
  }

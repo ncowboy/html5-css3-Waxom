@@ -10,34 +10,46 @@
 	<link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
-    <div class="wrapper">
-        <section class="head">
-    	  <div class="head-top">
+    <section class="head">
+	  <div class="container">
+	    <header class="navbar navbar-static-top">
+
+    	  <div class="navbar-header">
+			<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".menu-navbar-collapse">
+			  <span class="sr-only">Toggle navigation</span>
+              <span class="button-bar"></span>
+              <span class="button-bar"></span>
+              <span class="button-bar"></span>
+			</button>
     	    <div class="logo">
     		  <a href="#"><img src="img/logo.svg" width="64" height="56"><span>Waxom</span></a>
     		</div>
-    	    <nav class="menu">
-    	      <ul>
-    	        <li><a href="#">home</a></li>
-    		    <li><a href="#about-us">about us</a></li>
-    		    <li><a href="#portfolio">Portfolio</a></li>
-    		    <li><a href="#">Features</a></li>
-    		    <li><a href="#">Blog</a></li>
-    		    <li><a href="#">Pricing</a></li>
-    		    <li><a href="#">Shortcodes</a></li>
-    		    <li><a href="#">Contacts</a></li>
-    		  </ul>
-    		    <div id="search" class="panel-collapse collapse out">
-    		      <input type="search" autofocus  placeholder="for example: price" name=s></input>
-                  <button>
-    			    <i class="fa fa-search" aria-hidden="true"></i>
-    			  </button>
-                </div>
-              <a class="cart-search" data-toggle="collapse" href="#search"></a>
-    		  <a class="cart-search" href="#"></a>
+		  </div>
+		  <nav class="navbar-collapse menu-navbar-collapse collapse" role="navigation" style="height: 1px;">
+			<ul class="nav navbar-nav">
+				<li><a href="#">home</a></li>
+				<li><a href="#about-us">about us</a></li>
+				<li><a href="#portfolio">Portfolio</a></li>
+				<li><a href="#">Features</a></li>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">Pricing</a></li>
+				<li><a href="#">Shortcodes</a></li>
+				<li><a href="#">Contacts</a></li>
+				<li class="cart-search-wrapper">
+				  <a class="cart-search search" data-toggle="collapse" href="#search"></a>
+    		      <a class="cart-search" href="#"></a>
+				</li>
+				<li><div id="search" class="panel-collapse collapse out">
+    		    <input type="search" autofocus  placeholder="for example: price" name=s></input>
+                <button>
+    		    <i class="fa fa-search" aria-hidden="true"></i>
+    		    </button>
+             </div> </li>
+			 </ul>
     	    </nav>
     	  </div>
-    	  <div id="carousel" class="carousel slide" data-ride="carousel">
+	  </header>
+    	 <div id="carousel" class="carousel slide" data-ride="carousel">
     		<!-- Wrapper for slides -->
     		<div class="carousel-inner">
     		  <div class="item active">
@@ -67,6 +79,7 @@
     		</ol>
           </div>
     	</section>
+
     	<aside class="social">
     	  <div>
     	    <a href="#" class="fa fa-facebook fa-2x" aria-hidden="true"></a>
@@ -80,50 +93,52 @@
     	  </div>
     	</aside>
     	<section id="about-us">
-    	  <div class="advantages">
-    	    <figure>
-    		  <p class="icon-pencil"></p>
-    		  <p>Web & App Design</p>
-    		  <figcaption>
-    		    Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.
-    		  </figcaption>
-          <div class="advs-line"></div>
-    		</figure>
-    		<figure>
-    		  <p class="icon-stack"></p>
-    		  <p>Development</p>
-    		  <figcaption>
-    		    Lorem ipsum dolor sit amet, adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.
-    		  </figcaption>
-          <div class="advs-line"></div>
-    		</figure>
-    		<figure>
-    		  <p class="icon-cog"></p>
-    		  <p>Customization</p>
-    		  <figcaption>
-    		    Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.
-    		  </figcaption>
-          <div class="advs-line"></div>
-    		</figure>
-    		<figure>
-    		  <p class="icon-folder"></p>
-    		  <p>Marketing</p>
-    		  <figcaption>
-    		    Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.
-    		  </figcaption>
-          <div class="advs-line"></div>
-    		</figure>
-    	  </div>
-    	  <div class="realization">
-    	    <div class="inner-wrapper">
-    	      <h3>Waxom is Realization of your Ideas.</h3>
-    		  <p>
-            Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.
-    		  </p>
-    		  <div class="browser">
-    		  </div>
-    	    </div>
-    	  </div>
+		  <div class="container">
+			  <div class="row">
+				<figure class="col-xs-6 col-md-3">
+				  <p class="icon-pencil"></p>
+				  <p>Web & App Design</p>
+				  <figcaption>
+					Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.
+				  </figcaption>
+			  <div class="advs-line"></div>
+				</figure>
+				<figure class="col-xs-6 col-md-3">
+				  <p class="icon-stack"></p>
+				  <p>Development</p>
+				  <figcaption>
+					Lorem ipsum dolor sit amet, adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.
+				  </figcaption>
+			  <div class="advs-line"></div>
+				</figure>
+				<div class="clearfix visible-xs"></div>
+				<figure class="col-xs-6 col-md-3">
+				  <p class="icon-cog"></p>
+				  <p>Customization</p>
+				  <figcaption>
+					Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.
+				  </figcaption>
+			  <div class="advs-line"></div>
+				</figure>
+				<figure class="col-xs-6 col-md-3">
+				  <p class="icon-folder"></p>
+				  <p>Marketing</p>
+				  <figcaption>
+					Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.
+				  </figcaption>
+			  <div class="advs-line"></div>
+				</figure>
+				<div class="clearfix visible-xs"></div>
+			  </div>
+			  <div class="realization">
+				  <h3>Waxom is Realization of your Ideas.</h3>
+				  <p>
+				Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.
+				  </p>
+				  <div class="browser">
+				  </div>
+			  </div>
+		  </div>
     	</section>
     	<aside class="adv">
     	  <div class="inner-wrapper">
@@ -135,7 +150,7 @@
     	  </div>
     	</aside>
       <section id="portfolio" class="portfolio">
-        <div class="inner-wrapper">
+        <div class="container">
           <h3>Our Latest Projects</h3>
           <p>
             Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.
@@ -147,107 +162,131 @@
             <a href="#">illustration</a>
             <a href="#">photography</a>
           </div>
-          <div class="project-list">
-            <article class="project">
-              <div class="project-photo">
-                <img src="img/phone-in-hand.jpg">
-                <div class="link"></div>
-                <div class="loop"></div>
-              </div>
-              <div class="project-bg">
-                <div class="arrow">
+          <div class="row">
+            <article class="col-xs-6 col-md-4">
+			  <div class="project">
+			    <div class="link-loop">
+				  <div class="link"></div>
+				  <div class="loop"></div>
+				</div>
+                <div class="project-photo">
+                  <img src="img/phone-in-hand.jpg">
                 </div>
+                <div class="project-bg">
+                  <div class="arrow"></div>
                 <header>Claritas Etiam Processus</header>
                 <p>Photography, Nature</p>
-              </div>
-            </article>
-            <article class="project">
-              <div class="project-photo">
-                <img src="img/rock.jpg">
-                <div class="link"></div>
-                <div class="loop"></div>
-              </div>
-              <div class="project-bg">
-                <div class="arrow">
                 </div>
+			  </div>
+            </article>
+			<article class="col-xs-6 col-md-4">
+			  <div class="project">
+			    <div class="link-loop">
+				  <div class="link"></div>
+				  <div class="loop"></div>
+				</div>
+                <div class="project-photo">
+                  <img src="img/rock.jpg">
+                </div>
+                <div class="project-bg">
+                  <div class="arrow"></div>
                 <header>Quam Nutamus Farum</header>
                 <p>Graphic Design, Mock-Up</p>
-              </div>
-            </article>
-            <article class="project">
-              <div class="project-photo">
-                <img src="img/notebook.jpg">
-                <div class="link"></div>
-                <div class="loop"></div>
-              </div>
-              <div class="project-bg">
-                <div class="arrow">
                 </div>
+			  </div>
+            </article>
+			<div class="clearfix visible-xs"></div>
+			<article class="col-xs-6 col-md-4">
+			  <div class="project">
+			    <div class="link-loop">
+				  <div class="link"></div>
+				  <div class="loop"></div>
+				</div>
+                <div class="project-photo">
+                  <img src="img/notebook.jpg">
+                </div>
+                <div class="project-bg">
+                  <div class="arrow"></div>
                 <header>Usus Legentis Videntur</header>
                 <p>Photography, Holiday</p>
-              </div>
-            </article>
-            <article class="project">
-              <div class="project-photo">
-                <img src="img/birds.jpg">
-                <div class="link"></div>
-                <div class="loop"></div>
-              </div>
-              <div class="project-bg">
-                <div class="arrow">
                 </div>
+			  </div>
+            </article>
+           	<article class="col-xs-6 col-md-4">
+			  <div class="project">
+			    <div class="link-loop">
+				  <div class="link"></div>
+				  <div class="loop"></div>
+				</div>
+                <div class="project-photo">
+                  <img src="img/birds.jpg">
+                </div>
+                <div class="project-bg">
+                  <div class="arrow"></div>
                 <header>Claritas Etiam Processus</header>
                 <p>Photography, Nature</p>
-              </div>
-            </article>
-            <article class="project">
-              <div class="project-photo">
-                <img src="img/journal.jpg">
-                <div class="link"></div>
-                <div class="loop"></div>
-              </div>
-              <div class="project-bg">
-                <div class="arrow">
                 </div>
-                <header>Quam Nutamus Farum</header>
+			  </div>
+            </article>
+			<div class="clearfix visible-xs"></div>
+           	<article class="col-xs-6 col-md-4">
+			  <div class="project">
+			    <div class="link-loop">
+				  <div class="link"></div>
+				  <div class="loop"></div>
+				</div>
+                <div class="project-photo">
+                  <img src="img/journal.jpg">
+                </div>
+                <div class="project-bg">
+                  <div class="arrow"></div>
+                 <header>Quam Nutamus Farum</header>
                 <p>Quam Nutamus Farum</p>
-              </div>
-            </article>
-            <article class="project">
-              <div class="project-photo">
-                <img src="img/sea.jpg">
-                <div class="link"></div>
-                <div class="loop"></div>
-              </div>
-              <div class="project-bg">
-                <div class="arrow">
                 </div>
-                <header>Usus Legentis Videntur</header>
-                <p>Photography, Holiday</p>
-              </div>
+			  </div>
             </article>
+            <article class="col-xs-6 col-md-4">
+			  <div class="project">
+			    <div class="link-loop">
+				  <div class="link"></div>
+				  <div class="loop"></div>
+				</div>
+                <div class="project-photo">
+                  <img src="img/sea.jpg">
+                </div>
+                <div class="project-bg">
+                  <div class="arrow"></div>
+               <header>Usus Legentis Videntur</header>
+                <p>Photography, Holiday</p>
+                </div>
+			  </div>
+            </article>
+			<div class="clearfix visible-xs"></div>
           </div>
           <a class="btn btn-warning btn-lg" href="#"><span>load more</span></a>
         </div>
       </section>
       <section class="presentation">
-        <div class="video-player">
-          <video id="pres-video">
-            <source src="video_path/presentation.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
-            <source src="video_path/presentation.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
-          </video>
-          <div class="play-icon">
-          </div>
-          <h3>Waxom Video Presentation</h3>
-          <p>Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius, qui sequitur mutationem consuetudium.</p>
-          <p id="timer">03:26</p>
-        </div>
+	    <div class="container-fluid">
+			<div class="video-player">
+			  <video id="pres-video">
+				<source src="video_path/presentation.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+				<source src="video_path/presentation.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
+			  </video>
+			  <div class="play-icon">
+			  </div>
+			  <h3>Waxom Video Presentation</h3>
+			  <p>Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius, qui sequitur mutationem consuetudium.</p>
+			  <p id="timer">03:26</p>
+			</div>
+		</div>
       </section>
       <section class="features" id="features">
-        <div class="inner-wrapper">
-          <div class="features-img">
+        <div class="container">
+		<div class="row">
+          <div class="features-img col-xs-12 col-md-6 visible-lg">
           </div>
-          <div class="features-text">
+          <div class="features-text col-xs-12 col-md-6">
             <h3>Excellent for Mobile Devices</h3>
             <p>
               Qisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius claritas. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.
@@ -280,61 +319,62 @@
         </div>
       </section>
       <section class="stats">
-        <div class="inner-wrapper">
-          <figure>
-            <div class="stats-img"></div>
-            <p>3587</p>
-            <figcaption>
-              satisfied clients
-            </figcaption>
-            <div class="stats-line"></div>
-          </figure>
-          <figure>
-            <div class="stats-img coffee"></div>
-            <p>207</p>
-            <figcaption>
-              cups of coffee
-            </figcaption>
-            <div class="stats-line"></div>
-          </figure>
-          <figure>
-            <div class="stats-img chat"></div>
-            <p>2500</p>
-            <figcaption>
-              blog posts
-            </figcaption>
-            <div class="stats-line"></div>
-          </figure>
-          <figure>
-            <div class="stats-img heart"></div>
-            <p>873</p>
-            <figcaption>
-              likes
-            </figcaption>
-            <div class="stats-line"></div>
-          </figure>
-          <figure>
-            <div class="stats-img plate"></div>
-            <p>900</p>
-            <figcaption>
-              we launched
-            </figcaption>
-            <div class="stats-line"></div>
-          </figure>
+        <div class="container">
+			  <figure class="">
+				<div class="stats-img"></div>
+				<p>3587</p>
+				<figcaption>
+				  satisfied clients
+				</figcaption>
+				<div class="stats-line"></div>
+			  </figure>
+			  <figure class="">
+				<div class="stats-img coffee"></div>
+				<p>207</p>
+				<figcaption>
+				  cups of coffee
+				</figcaption>
+				<div class="stats-line"></div>
+			  </figure>
+			  <figure class="">
+				<div class="stats-img chat"></div>
+				<p>2500</p>
+				<figcaption>
+				  blog posts
+				</figcaption>
+				<div class="stats-line"></div>
+			  </figure>
+			  <figure class="">
+				<div class="stats-img heart"></div>
+				<p>873</p>
+				<figcaption>
+				  likes
+				</figcaption>
+				<div class="stats-line"></div>
+			  </figure>
+			  <figure class="">
+				<div class="stats-img plate"></div>
+				<p>900</p>
+				<figcaption>
+				  we launched
+				</figcaption>
+				<div class="stats-line"></div>
+			  </figure>
         </div>
       </section>
       <section class="blog">
-        <div class="inner-wrapper">
+        <div class="container">
           <h3>Recent posts</h3>
           <p>
             Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.
           </p>
-          <div class="feed">
-            <article>
-              <div class="date">
-                <div class="day">
+          <div class="row">
+            <article class="col-xs-12 col-md-4">
+			 <div class="post-wrapper">
+               <div class="date">
+                 <div class="day">
                   30
-                </div>
+                 </div>
                 <div class="month">
                   Sep.
                 </div>
@@ -351,8 +391,10 @@
                 </p>
                 <a href="#">Read More &nbsp;<span>▶</span></a>
               </div>
+			 </div>
             </article>
-            <article>
+            <article class="col-xs-12 col-md-4">
+			 <div class="post-wrapper">
               <div class="date">
                 <div class="day">
                   30
@@ -373,9 +415,11 @@
                 </p>
                 <a href="#">Read More &nbsp;<span>▶</span></a>
               </div>
+			 </div>
             </article>
-            <article>
-              <div class="date">
+            <article class="col-xs-12 col-md-4">
+             <div class="post-wrapper">
+			  <div class="date">
                 <div class="day">
                   30
                 </div>
@@ -395,6 +439,7 @@
                 </p>
                 <a href="#">Read More &nbsp;<span>▶</span></a>
               </div>
+			 </div>
             </article>
           </div>
           <div class="feed-nav">
@@ -407,17 +452,20 @@
         </div>
       </section>
       <section class="partners">
-        <div class="inner-wrapper">
-          <a href="#"><img src="img/logo-01.png"></a>
-          <a href="#"><img src="img/logo-02.png"></a>
-          <a href="#"><img src="img/logo-03.png"></a>
-          <a href="#"><img src="img/logo-04.png"></a>
+        <div class="container">
+		 <div class="row">
+          <a href="#" class="col-xs-3 col-sm-3 col-md-3"><img src="img/logo-01.svg"></a>
+          <a href="#" class="col-xs-3 col-sm-3 col-md-3"><img src="img/logo-02.svg"></a>
+          <a href="#" class="col-xs-3 col-sm-3 col-md-3"><img src="img/logo-03.svg"></a>
+          <a href="#" class="col-xs-3 col-sm-3 col-md-3"><img src="img/logo-04.svg"></a>
+		 </div>
         </div>
       </section>
-      <footer>
+     <footer>
         <div class="footer-top">
-          <div class="inner-wrapper">
-            <div class="footer-about">
+          <div class="container">
+		   <div class="row">
+            <div class="footer-about col-xs-12 col-sm-3 col-md-3 ">
               <div class="logo">
         		  <a href="#"><img src="img/logo.svg" width="64" height="56"><span>Waxom</span></a>
         		</div>
@@ -426,7 +474,7 @@
             </p>
             <a href="#">Read More &nbsp;<span>▶</span></a>
             </div>
-            <div class="footer-recent-posts">
+            <div class="footer-recent-posts col-xs-12 col-sm-3 col-md-3">
               <h3>Recent posts</h3>
               <div class="footer-feed">
                 <div class="footer-post">
@@ -464,7 +512,7 @@
 
               </div>
             </div>
-            <div class="our-twitter">
+            <div class="our-twitter col-xs-12 col-sm-3 col-md-3">
               <h3>Our Twitter</h3>
               <div class="tweet-feed">
                 <div class="tweet">
@@ -496,28 +544,33 @@
               </div>
             </div>
             </div>
-            <div class="dribble-widget">
+            <div class="dribble-widget col-xs-12 col-sm-3 col-md-3" >
               <h3>Dribble Widget</h3>
-              <img src="img/dribble-widget.png">
+              <img class="img-responsive" src="img/dribble-widget.png">
             </div>
+			</div>
+		   </div>
           </div>
         </div>
         <div class="footer-bottom">
-          <div class="inner-wrapper">
-            <div class="footer-bottom-left">
-              <div>Copyright &copy; 2015 <a href="#">Waxom</a></div>
-              <a href="#">Privacy Policy</a>
-                <a href="#">FAQ</a>
-                <a href="#">Support</a>
-            </div>
-            <div class="footer-bottom-right">
-              <div>Designed by <a href="#">ThemeFire</a></div>
-              <div>Only on <a href="#">Envato Market</a></div>
+          <div class="container">
+            <div class="row">
+              <div class="footer-bottom-left col-md-6">
+                <div>Copyright &copy; 2015 <a href="#">Waxom</a></div>
+                <a href="#">Privacy Policy</a>
+                  <a href="#">FAQ</a>
+                  <a href="#">Support</a>
+              </div>
+              <div class="footer-bottom-right col-md-6">
+                <div>Designed by <a href="#">ThemeFire</a></div>
+                <div>Only on <a href="#">Envato Market</a></div>
+              </div>
             </div>
           </div>
         </div>
       </footer>
     </div>
+
     <script src="js/jquery-2.1.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
   </body>

@@ -1,6 +1,8 @@
 .features {
   background-color: $bg-darker;
   padding-top: 80px;
+  
+  
   h3 {
     font-family: 'Raleway medium', Arial;
     color:  $dark-gray;
@@ -88,12 +90,4 @@
     flex-shrink: 0;
   }
 
-  .features-text {
-    margin-left: 30px;
-    margin-top: 100px;
-  }
-
-  .inner-wrapper {
-    display: flex;
-  }
 }

@@ -1,3 +1,116 @@
+.head {
+  width: 100%;
+  background-image: url('../img/photo.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 40px;
+  
+  @media (max-width: 768px) {
+		  padding-bottom: 0;
+		}
+  
+  header {
+	display: flex;
+	@media (max-width: 768px) {
+	  flex-direction: column;
+		}
+		
+	.navbar-header {
+	   flex: 1;
+	    @media (max-width: 768px) {
+		  width: 100%;
+		}
+		
+	    .button-bar {
+		  display: block;
+		  margin-bottom: 5px;  
+		  width: 65px;
+		  height: 10px;
+		  background-color: #fff;
+		}
+	  }
+	.cart-search {
+		display: block;
+		background-image: url('../img/icons.svg');
+		background-repeat: no-repeat;
+		flex-shrink: 0;
+		width: 24px;
+		height: 24px;
+		margin-right: 24px;
+		  &:hover {
+			background-image: url('../img/icons-hover.svg');
+			transition: 0.3s ease-in-out;
+			}
+		  } 
+	.cart-search-wrapper {
+	  display: flex;
+	  margin-left: 65px;
+	   @media (max-width: 768px) {
+	     margin-left: 0;
+	}
+	 
+	}	  
+	}
+	
+	
+    .logo {
+    font-family: 'Raleway Medium', arial;
+    font-size: 34px;
+    font-weight: 400;
+	a {
+	  display: flex;
+      align-items: center;
+	  color: #fff;
+	  text-decoration: none;
+	}
+  }
+  
+}
+
+.nav {
+    input,
+    button {
+    color: $dark-gray;
+	outline-style: none;
+	font-size: 16px;
+	border-radius: 8px;
+	  &::placeholder {
+	    font-size: 0.6em;
+		  font-weight: 200;
+		  font-style: italic;
+	  }
+   }
+   
+   button {
+    width: 30px;
+  }
+  
+  input {
+    margin-top: 10px;
+  }
+  
+  li {
+	  a{
+		color:  #ffffff;
+		font-size: 14px;
+		font-weight: 300;
+		  padding: 10px 10px;
+		width: 100%;
+		height: 100%;
+		text-decoration: none;
+		text-transform: capitalize;
+		  &:hover,
+		  &:focus{
+		   color: $gray-hover;
+		   background-color: transparent;
+			}
+		 }
+	}
+ .search {
+	background-position-x: -46px;
+}	
+}
+
 
 .btn {
   margin-top: 20px;
@@ -12,13 +125,17 @@
   padding: 19px 28px;
   border-radius: 3px;
   transition: 0.3s ease-in-out;
-
 }
 
  #carousel {
   margin: 0 auto;
+  margin-top: 240px;
   text-align: center;
+    @media (max-width: 768px) {
+	  display: none;
+	}
   }
+  
 
 .carousel-control.left,
 .carousel-control.right {
@@ -36,90 +153,3 @@
     margin: 0 auto;
     padding-bottom: 3px;
  }
-
-.head {
-  width: 100%;
-  background-image: url('../img/photo.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding-bottom: 40px;
-}
-
-.head-top {
-  width: 75%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 275px;
-}
-
-.logo {
-    font-family: 'Raleway Medium', arial;
-    font-size: 34px;
-    font-weight: 400;
-	a {
-	color: #fff;
-	text-decoration: none;
-	}
-  }
-
-.menu {
-  display: flex;
-  a{
-    color:  #ffffff;
-    font-size: 14px;
-    font-weight: 300;
-	  padding: 10px 10px;
-    width: 100%;
-    height: 100%;
-    text-decoration: none;
-    text-transform: capitalize;
-	  &:hover {
-       color: $gray-hover;
-        }
-	  &:nth-child(3) {
-        background-position-x: -46px;
-       }
-	 }
-
-  .cart-search {
-  background-image: url('../img/icons.svg');
-  background-repeat: no-repeat;
-  flex-shrink: 0;
-  width: 24px;
-  height: 24px;
-  margin-right: 24px;
-    &:hover {
-    background-image: url('../img/icons-hover.svg');
-    transition: 0.3s ease-in-out;
-    }
-  }
-  input,
-  button {
-    color: $dark-gray;
-	outline-style: none;
-	font-size: 16px;
-	border-radius: 8px;
-	  &::placeholder {
-	    font-size: 0.6em;
-		  font-weight: 200;
-		  font-style: italic;
-	  }
-   }
-
-  li {
-    display: inline-block;
-  }
-
-  ul {
-    margin-right: 60px;
-  }
-}
-
-#search {
-  margin-right: 10px;
-
-   button {
-    width: 30px;
-  }
-}

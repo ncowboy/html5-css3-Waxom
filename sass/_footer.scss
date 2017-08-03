@@ -11,8 +11,14 @@ footer {
       font-weight: 700;
       margin-bottom: 33px;
     }
+
+	  .dribble-widget {
+	    display: flex;
+		flex-direction: column;
+		align-items: center;
+	  }
       .footer-about {
-        width: 23%;
+
         a {
           color: #d1d1d1;
           font-family: Montserrat, Arial;
@@ -55,7 +61,7 @@ footer {
       }
 
       .footer-recent-posts {
-        width: 23%;
+
         .footer-feed {
           display: flex;
           flex-direction: column;
@@ -100,7 +106,7 @@ footer {
       }
 
       .our-twitter {
-          width: 23%;
+
           hr {
               border: 0;
               border-top: 2px solid #252525;
@@ -136,11 +142,6 @@ footer {
 
         }
       }
-
-      .inner-wrapper {
-        display: flex;
-        justify-content: space-between;
-      }
   }
   .footer-bottom {
     background-color: #111;
@@ -152,7 +153,7 @@ footer {
     color: $dark-gray;
       a {
         text-decoration: none;
-        color: $dark-gray;
+        color: $font-basic;
           &:hover {
             color: $gray-hover;
           }
@@ -160,6 +161,7 @@ footer {
     .footer-bottom-left,
     .footer-bottom-right {
       display: flex;
+      justify-content: center;
       div,
       a {
         display: block;
@@ -175,10 +177,12 @@ footer {
       }
 
     }
-    .inner-wrapper {
-      display: flex;
-      justify-content: space-between;
-    }
+
+      .footer-bottom-right {
+        @media (max-width: 768px) {
+          margin-top: 30px;
+        }
+      }
   }
 
 }
